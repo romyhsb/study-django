@@ -1,0 +1,19 @@
+{% extends "master.html" %}
+
+{% block title %}
+    Daftar Nama Dosen
+{% endblock %}
+
+
+{% block content %}
+<h1>Daftar Nama Dosen STT-NF</h1>
+
+    <ul>
+        {% for i in dosen  %}:
+            <a href="details/{{i.id}}">{{i.first_name}} {{i.last_name}}</a>
+            <br>
+        {% endfor %}
+    </ul>
+
+    <p><a href="/">Home</a></p>
+{% endblock %}

@@ -1,0 +1,30 @@
+{% extends "master.html" %}
+
+{% block title %}
+This is for test view
+{% endblock  %}
+
+{% block content %}
+<h1>This page used to test view </h1>
+<hr>
+
+{% comment %} melakukan looping dengan for  {% endcomment %}
+{% for i in fruits %}:
+<p><h3>I like to eat {{i}}</h3></p>
+<br>
+{% endfor %}
+
+{% comment %} define variable pada template django  {% endcomment %}
+{% with name="Romi Wahyudi" %}
+ <h2>Hello {{name}}, how are you today</h2>
+{% endwith %}
+
+
+{% comment %} conditional in django  {% endcomment %}
+{% if  condition %}
+    <h1> Hallo romi</h1>
+{% else %}
+<h1> Anda salah </h1>
+{% endif %}
+
+{% endblock  %}

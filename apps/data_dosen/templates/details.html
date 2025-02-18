@@ -1,0 +1,19 @@
+{% extends "master.html" %} 
+
+{% block title %}
+Title about {{dosen.first_name}} {{dosen.last_name}}
+{% endblock %}
+
+{% block content %}
+
+    <h1>{{dosen.first_name}} {{dosen.last_name}}</h1>
+   
+    <p>Phone : {{dosen.phone}}</p>
+    <p>Member since : {{dosen.joined_date}}</p>
+    <p>Age : {{dosen.Age}}</p>
+    <p>Status : {{dosen.status}}</p>
+
+    <p>Back to <a href="/data-dosen">daftar nama dosen</a></p>
+    <p><a href="/">Home</a></p>
+{% endblock %}
+
